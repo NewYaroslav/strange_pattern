@@ -44,3 +44,6 @@ if(BPSW::isprime(std::abs(temp)) == true) {
 # Для пользователей Windows
 Вы можете воспользоваться готовой программой, которая находится в архиве в папке bin.
 Не забудьте в консоли запустившейся программы ввести ширину и высоту окна.
+
+# Программа на JavaScript
+https://mashed-potatoes.github.io/Strange_Pattern.js/
