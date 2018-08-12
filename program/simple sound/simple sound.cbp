@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="simple sound" />
+		<Option pch_mode="2" />
+		<Option compiler="mingw_32_5_1_0_with_opencv" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/simple sound" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="mingw_32_5_1_0_with_opencv" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/simple sound" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="mingw_32_5_1_0_with_opencv" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="../../src" />
+					<Add directory="../../lib/xwave/src" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="../../src" />
+					<Add directory="../../lib/xwave/src" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../lib/xwave/src/xwave.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../../lib/xwave/src/xwave.h" />
+		<Unit filename="../../src/BPSW.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -100,7 +100,7 @@ int main() {
             else isRun = false;
         } else
         if(symbol == 'T' || symbol == 't') {
-            if(algorithm_type < 3) algorithm_type++;
+            if(algorithm_type < 4) algorithm_type++;
             else algorithm_type = 0;
             generateImage(image, x, y, w, h, algorithm_type, divider);
         } else
@@ -144,7 +144,7 @@ void generateImage(cv::Mat& image, long long offset_x, long long offset_y, long 
     cv::Scalar backgroundColor(0,0,0);
     output.setTo(backgroundColor);
     //std::cout << "1" << std::endl;
-    if(algorithm_type < 3) {
+    if(algorithm_type < 4) {
         for(long long i = 0; i < w; ++i) {
             for(long long j = 0; j < h; ++j) {
                 long long gx = offset_x + i;
@@ -153,10 +153,13 @@ void generateImage(cv::Mat& image, long long offset_x, long long offset_y, long 
                 if(algorithm_type == 0) temp = gx ^ gy;
                 else if(algorithm_type == 1) temp = gx & gy;
                 else if(algorithm_type == 2) temp = gx | gy;
+                else if(algorithm_type == 3) {
+                    temp = gy | (long long)std::sqrt(std::abs(gx));
+                }
 
                 cv::Point3_<uchar>* p = output.ptr<cv::Point3_<uchar> >(j,i);
 
-                if(BPSW::isprime(std::abs(temp)) == true) {
+                if(BPSW::isprime(std::abs(temp))) {
                 // if(temp % 7 == 0) {
                     p->x = 255;
                     p->y = 120;
