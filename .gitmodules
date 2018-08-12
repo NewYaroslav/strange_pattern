@@ -1,0 +1,3 @@
+[submodule "lib/xwave"]
+	path = lib/xwave
+	url = https://github.com/NewYaroslav/xwave.git
