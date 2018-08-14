@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1534072966 source:d:\_repoz\strange_pattern\lib\xwave\src\xwave.c
+	"xwave.h"
+	<limits.h>
+	<stdio.h>
+
+1534072966 d:\_repoz\strange_pattern\lib\xwave\src\xwave.h
+	<stdio.h>
+

@@ -139,7 +139,7 @@ void generateImage(cv::Mat& image, long long offset_x, long long offset_y, long 
     if(divider <= 0) divider = 1;
     //if(offset_x % 2 == 0) offset_x+=1;
     //if(offset_y % 2 == 0) offset_y+=1;
-    // ñîçäàäèì êàðòèíêó
+    // ÑÐ¾Ð·Ð´Ð°Ð´Ð¸Ð¼ ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÑƒ
     cv::Mat output(cv::Size(w, h), CV_8UC3);
     cv::Scalar backgroundColor(0,0,0);
     output.setTo(backgroundColor);
