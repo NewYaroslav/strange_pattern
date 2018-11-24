@@ -58,3 +58,5 @@ if(BPSW::isprime(std::abs(temp)) == true) {
 ![example_java](doc/example_java.png)
 * *Шейдер на www.shadertoy.com* [https://www.shadertoy.com/view/4tcyWH](https://www.shadertoy.com/view/4tcyWH)
 ![example_shadertoy](doc/example_shadertoy.png)
+* *Еще один шейдер на www.shadertoy.com* [https://www.shadertoy.com/view/XlcyD8](https://www.shadertoy.com/view/XlcyD8)
+![example_shadertoy](doc/example_shadertoy2.png)

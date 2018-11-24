@@ -9,16 +9,18 @@ using namespace std;
 // Типы алгоритмов для создания узора
 enum AlgorithmType {
         STRANGE_PATTERNS_MAIN = 0,
-        STRANGE_PATTERNS_AND = 1,
-        STRANGE_PATTERNS_OR = 2,
-        STRANGE_PATTERNS_SQRT = 3,
-        STRANGE_PATTERNS_CONCATENATION_1 = 4,
-        STRANGE_PATTERNS_CONCATENATION_2 = 5,
-        STRANGE_PATTERNS_CONCATENATION_3 = 6,
-        STRANGE_PATTERNS_CONCATENATION_4 = 7,
-        STRANGE_PATTERNS_CRC64 = 8,
-        STRANGE_PATTERNS_MAIN_RGB = 9,
-        STRANGE_PATTERNS_MAX = 10
+        STRANGE_PATTERNS_EQV,
+        STRANGE_PATTERNS_IMP,
+        STRANGE_PATTERNS_AND,
+        STRANGE_PATTERNS_OR,
+        STRANGE_PATTERNS_SQRT,
+        STRANGE_PATTERNS_CONCATENATION_1,
+        STRANGE_PATTERNS_CONCATENATION_2,
+        STRANGE_PATTERNS_CONCATENATION_3,
+        STRANGE_PATTERNS_CONCATENATION_4,
+        STRANGE_PATTERNS_CRC64,
+        STRANGE_PATTERNS_MAIN_RGB,
+        STRANGE_PATTERNS_MAX
 };
 
 /* функция для создания изображения
@@ -186,6 +188,12 @@ void generateImage(cv::Mat& image, long long offset_x, long long offset_y, long 
         switch(algorithm_type) {
         case STRANGE_PATTERNS_MAIN:
                 fillImage(output, offset_x, offset_y, w, h, calc_strange_patterns_main);
+                break;
+        case STRANGE_PATTERNS_EQV:
+                fillImage(output, offset_x, offset_y, w, h, calc_strange_patterns_eqv);
+                break;
+        case STRANGE_PATTERNS_IMP:
+                fillImage(output, offset_x, offset_y, w, h, calc_strange_patterns_imp);
                 break;
         case STRANGE_PATTERNS_AND:
                 fillImage(output, offset_x, offset_y, w, h, calc_strange_patterns_and);

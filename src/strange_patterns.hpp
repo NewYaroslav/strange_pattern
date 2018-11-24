@@ -91,4 +91,16 @@ inline bool calc_strange_patterns_crc64(long long x, long long y)
         return BPSW::isprime(std::abs(temp));
 }
 
+inline bool calc_strange_patterns_imp(long long x, long long y)
+{
+        long long temp = ~x | y;
+        return BPSW::isprime(std::abs(temp));
+}
+
+inline bool calc_strange_patterns_eqv(long long x, long long y)
+{
+        long long temp = ~(x ^ y);
+        return BPSW::isprime(std::abs(temp));
+}
+
 #endif // STRANGE_PATTERNS_HPP_INCLUDED
