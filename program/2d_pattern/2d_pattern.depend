@@ -1,15 +1,24 @@
 # depslib dependency file v1.0
-1534073470 source:d:\_repoz\strange_pattern\program\2d_pattern\main.cpp
+1543069602 source:d:\_repoz\strange_pattern\program\2d_pattern\main.cpp
 	<iostream>
-	"BPSW.hpp"
-	"cmath"
 	"opencv2/core.hpp"
 	"opencv2/opencv.hpp"
+	"strange_patterns.hpp"
 	"dir.h"
 
-1534073693 d:\_repoz\strange_pattern\src\bpsw.hpp
+1543069625 d:\_repoz\strange_pattern\src\bpsw.hpp
 	<algorithm>
 	<cmath>
 	<map>
 	<vector>
+
+1543068782 source:d:\_repoz\strange_pattern\src\crc64.cpp
+	"crc64.hpp"
+
+1543068743 d:\_repoz\strange_pattern\src\crc64.hpp
+
+1543069082 d:\_repoz\strange_pattern\src\strange_patterns.hpp
+	"BPSW.hpp"
+	"crc64.hpp"
+	"cmath"
 

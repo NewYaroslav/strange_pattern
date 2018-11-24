@@ -187,12 +187,12 @@ namespace BPSW {
         if (a == 1)
             return 1;
 
-        if (a < 0)
+        if (a < 0) {
             if ((b & 2) == 0)
                 return jacobi (-a, b);
             else
                 return - jacobi (-a, b);
-
+        }
         T e, a1;
         transform_num (a, e, a1);
 

@@ -36,6 +36,9 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="../../src/BPSW.hpp" />
+		<Unit filename="../../src/crc64.cpp" />
+		<Unit filename="../../src/crc64.hpp" />
+		<Unit filename="../../src/strange_patterns.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
