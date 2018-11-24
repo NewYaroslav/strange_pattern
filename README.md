@@ -39,7 +39,7 @@ if(BPSW::isprime(std::abs(temp)) == true) {
 Также можно сгенерировать звук на основе XOR алгоритма узора. Для этого в папке *bin* есть программа *simple_sound*.
 Введите длину трека в секундах, длину одного тика, начальные координаты и скорость смещения. На выходе программа сгенерирует wav файл с мелодией.
 
-**Управление программой**
+**Управление программой:**
 Переключитель на экран программы, который отображает узор, и нажимайте соответствующие клавиши. 
 Убедитесь, что язык ввода английский.
 - W двигаться вверх
@@ -54,7 +54,7 @@ if(BPSW::isprime(std::abs(temp)) == true) {
 - V начать или остановить запись видео в формате avi
 
 ### Реализация алгоритма другими пользователями
-- [Программа на JavaScript] (https://mashed-potatoes.github.io/Strange_Pattern.js/)
+* *Программа на JavaScript* [https://mashed-potatoes.github.io/Strange_Pattern.js/](https://mashed-potatoes.github.io/Strange_Pattern.js/)
 ![example_java](doc/example_java.png)
-- [Шейдер на www.shadertoy.com] (https://www.shadertoy.com/view/4tcyWH)
+* *Шейдер на www.shadertoy.com* [https://www.shadertoy.com/view/4tcyWH](https://www.shadertoy.com/view/4tcyWH)
 ![example_shadertoy](doc/example_shadertoy.png)
